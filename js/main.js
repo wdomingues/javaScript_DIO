@@ -1,10 +1,11 @@
-var frutas = [{nome: "jaca", cor: "verde"},
+
+var frutas = [{nome: "jaca", cor: "VERDE"},
                 {nome: "cajá", cor: "amarelo"}];
 console.log(frutas);
-alert(frutas[1].nome + " " + frutas[0].cor +"?");
+alert(frutas[1].nome + " " + frutas[0].cor.toLowerCase() +"?");
 
 var fruta = {nome: "maçã", cor: "vermelha"}
-console.log(fruta.nome)
+console.log(fruta.nome.toUpperCase()) //MAIÚSCULAS
 alert(fruta.cor)
 
 var lista = ["maçã", "pêra", "laranja"];
