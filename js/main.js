@@ -1,3 +1,27 @@
+function soma(n1, n2){
+    return n1+n2;
+}
+
+function stringReplace(frase, palavra, novaPalavra){
+    return frase.replace(palavra, novaPalavra);
+}
+
+function validaIdade(idade){
+    if (idade>=18){
+        return true;
+    } else{
+        return false;
+    }
+}
+
+alert(soma(7,14));
+var texto = "Gil Brother, o Away de Teresópolis.";
+alert(texto.replace("Teresópolis", "Petrópolis"));
+
+var idade = prompt("Qual é a sua idade?");
+alert(validaIdade(idade));
+
+/* 1.3
 //PARTE2
 
 var d = new Date();
@@ -47,6 +71,7 @@ if (idade >= 18){
 } else{
     alert("MENOR de Idade");
 }
+*/
 
 /*
 var frutas = [{nome: "jaca", cor: "VERDE"},
