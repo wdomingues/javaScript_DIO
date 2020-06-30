@@ -1,3 +1,28 @@
+function clicou(){
+    document.getElementById("agradecimento").innerHTML = "<b>Valeu pela curtida!</b>";
+    console.log(document.getElementById("agradecimento"));
+}
+function redirecionar(){
+    window.open("https://facebook.com/winnedomingues"); //abre em outra aba
+    window.location.href = "https://github.com/wdomingues"; //abre na mesma aba
+}
+function trocar(elemento){
+    //document.getElementById("mousemove").innerHTML = "Mouse passou pelo texto!";
+    elemento.innerHTML = "Mouse passou pelo texto!";
+    //alert("Trocar Texto");
+}
+function voltar(elemento){
+    //document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+    elemento.innerHTML = "Passe o mouse aqui";
+}
+function carregar(){
+    alert("Página Carregada");
+}
+function mudar(elemento) {
+    console.log(elemento.value);
+}
+
+/* 2.1.
 function soma(n1, n2){
     return n1+n2;
 }

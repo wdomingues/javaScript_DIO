@@ -3,14 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>WD's JavaScript lab</title>
+        <script type="text/javascript" src="js/main.js"> </script>
     </head>
-    <body>
-
-        <script type="text/javascript" src="js/main.js">
-
-            // alert("Oi");
-
-        </script>
-
+    <body onload="carregar()">
+        <button type="button" onclick="clicou()" name="button">Curtir</button>
+        <p id="agradecimento" onclick="redirecionar()"></p>
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <select onchange="mudar(this)"> <!-- lista/caixa de seleção-->
+            <option value="1"> Valor1</option>
+            <option value="2"> Valor2</option>
+            <option value="3"> Valor3</option>
+        </select>
     </body>
 </html>
